@@ -6,3 +6,9 @@
   color: lighten($text-color, 30%);
   font-size: 0.9em;
 }
+
+.site-footer a {	
+	text-decoration: none;
+	cursor: pointer;
+	color: #8F8F8F;
+}
