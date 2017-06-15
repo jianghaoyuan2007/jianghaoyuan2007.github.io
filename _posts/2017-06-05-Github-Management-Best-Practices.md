@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GitHub 管理最佳实践
+title: GitHub 管理基础实践
 ---
 
 代码的开源对整个软件行业有着深远的影响。一方面，它是技术发展方向的一种指引；另一方面，它也促使软件生产有了较高的质量保证。[GitHub](https://github.com) 是一个开源的平台，在这里你可以发现很多好的开源项目。同时，你在这里也可以学习到一个高质量的开源项目是如何分布式协作完成的。
@@ -96,8 +96,11 @@ title: GitHub 管理最佳实践
 下面是 `AFNetworking` 如何管理的：
 
 * 任何更改应该被关联在 `changelog` 中的应该使用 `Pull Request` 去进行合并。
+
 * `Pull Request` 的 `title` 应该简洁，将准备显示在 `changelog` 中。这就意味着 `repo` 的管理员需要适当地为你修改 `Pull Request` 的 `title`， 使它更加有意义。
+
 * 所有的 `release` 应该被 `GitHub milestone` 来管理。不仅这提供了一个[良好文档](https://github.com/AFNetworking/AFNetworking/issues?q=milestone%3A2.6.2)的地方为用户获得一个清晰的预览什么发布了，而且也为 `changelog` 的生成提供了主要的组件。这个 `milestone` 的名称要和计划的 `tag` 名称一致。
+
 * 所有的问题合并应该使用 `GitHub Label` 被分组在以下五类中的一类。这允许 `changelog` 以多个逻辑分离，就像[这样](https://github.com/AFNetworking/AFNetworking/blob/master/CHANGELOG.md#262-11062015)。你可以看到一个 `AFNetworking` 以[这种](https://github.com/AFNetworking/AFNetworking/issues?q=milestone%3A2.6.2+is%3Aclosed)方式发布管理的例子。
 	* Added
 	* Updated
@@ -105,19 +108,23 @@ title: GitHub 管理最佳实践
 	* Fixed
 	* Removed
 
-#### [Managing your work with issues](https://help.github.com/articles/managing-your-work-with-issues/)
+#### 扩展阅读
 
-You can manage your work on GitHub by creating issues to track ideas, enhancements, tasks, or bugs.
+* [Managing your work with issues](https://help.github.com/articles/managing-your-work-with-issues/)
 
-#### [Tracking the progress of your work with milestones](https://help.github.com/articles/tracking-the-progress-of-your-work-with-milestones/)
+	You can manage your work on GitHub by creating issues to track ideas, enhancements, tasks, or bugs.
 
-You can track your work on GitHub by creating milestones with associated issues and pull requests.
+* [Tracking the progress of your work with milestones](https://help.github.com/articles/tracking-the-progress-of-your-work-with-milestones/)
 
-#### [Release](https://help.github.com/categories/releases/)
+	You can track your work on GitHub by creating milestones with associated issues and pull requests.
 
+* [Release](https://help.github.com/categories/releases/)
+	
+	Releases are GitHub's way of packaging and providing software to your users. You can think of it as a replacement to using downloads to provide software.
 
-#### [Collaborating with issues and pull requests](https://help.github.com/categories/collaborating-with-issues-and-pull-requests/)
+* [Collaborating with issues and pull requests](https://help.github.com/categories/collaborating-with-issues-and-pull-requests/)
 
+	Pull requests let you tell others about changes you've pushed to a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before the changes are merged into the repository.
 
 <br/>
 
